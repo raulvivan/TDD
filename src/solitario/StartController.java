@@ -51,4 +51,9 @@ public class StartController {
 		return pilas;
 	}
 
+	public ArrayList<Stack<Card>> getPilasPalos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

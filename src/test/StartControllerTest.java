@@ -57,5 +57,10 @@ public class StartControllerTest {
 			i++;
 		}
 	}
+	
+	@Test
+	public void getPilasPalosTest(){
+		ArrayList<Stack<Card>> pilas = startController.getPilasPalos();
+	}
 
 }
