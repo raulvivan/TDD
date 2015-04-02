@@ -59,4 +59,9 @@ public class StartController {
 		return pilas;
 	}
 
+	public Stack<Card> getBaraja() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
