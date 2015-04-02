@@ -44,6 +44,18 @@ public class StartControllerTest {
 	@Test
 	public void getPilasTapadasTest(){
 		ArrayList<Stack<Card>> pilas = startController.getPilasTapadas();
+		
+		assertEquals(7, pilas.size());
+		int i = 0;
+		for(Stack<Card> cartas: pilas){
+			assertEquals(i, cartas.size());
+			for(Card carta: cartas){
+				assertNotNull(carta);
+				assertFalse(carta.uncovered());
+				assertTrue(cartas.indexOf(carta) == cartas.lastIndexOf(carta));
+			}
+			i++;
+		}
 	}
 
 }
