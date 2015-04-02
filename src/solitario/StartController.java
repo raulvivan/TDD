@@ -30,8 +30,25 @@ public class StartController {
 	}
 
 	public ArrayList<Stack<Card>> getPilasTapadas() {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Stack<Card>> pilas = new ArrayList<Stack<Card>>();
+		int numCartas = 0;
+		for(int i = 0; i<7 ; i++){
+			Card card;
+			Stack<Card> cartas = new Stack<Card>();
+			for(int j = 0; j<numCartas; j++){
+				do{
+					Random r = new Random();
+					card = new Card(r.nextInt(3), r.nextInt(11), false);
+					
+				}while(cartas.contains(card));
+				{
+					cartas.push(card);
+				}
+			}
+			numCartas++;
+			pilas.add(cartas);
+		}
+		return pilas;
 	}
 
 }
