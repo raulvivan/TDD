@@ -36,7 +36,7 @@ public class StartControllerTest {
 		for (Card card : peeksEachTableau) {
 			assertNotNull(card);
 			assertTrue(card.uncovered());
-			//assertFalse(peeksEachTableau.);
+			assertTrue(peeksEachTableau.indexOf(card) == peeksEachTableau.lastIndexOf(card));
 		}
 
 		
