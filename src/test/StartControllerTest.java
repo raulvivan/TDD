@@ -3,6 +3,7 @@ package test;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -38,8 +39,11 @@ public class StartControllerTest {
 			assertTrue(card.uncovered());
 			assertTrue(peeksEachTableau.indexOf(card) == peeksEachTableau.lastIndexOf(card));
 		}
-
-		
+	}
+	
+	@Test
+	public void getPilasTapadasTest(){
+		ArrayList<Stack<Card>> pilas = startController.getPilasTapadas();
 	}
 
 }

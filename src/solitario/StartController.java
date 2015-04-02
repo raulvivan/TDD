@@ -2,6 +2,7 @@ package solitario;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Stack;
 
 
 
@@ -26,6 +27,11 @@ public class StartController {
 			}
 		}
 		return peeksEachTableau;
+	}
+
+	public ArrayList<Stack<Card>> getPilasTapadas() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
