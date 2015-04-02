@@ -60,8 +60,19 @@ public class StartController {
 	}
 
 	public Stack<Card> getBaraja() {
-		// TODO Auto-generated method stub
-		return null;
+		Stack<Card> baraja = new Stack<Card>();
+		for(int i = 0; i<24 ; i++){
+			Card card;
+			do{
+				Random r = new Random();
+				card = new Card(r.nextInt(3), r.nextInt(11), false);
+				
+			}while(baraja.contains(card));
+			{
+				baraja.push(card);
+			}
+		}
+		return baraja;
 	}
 
 }
