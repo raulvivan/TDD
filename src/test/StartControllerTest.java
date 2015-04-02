@@ -71,7 +71,13 @@ public class StartControllerTest {
 	@Test
 	public void getBarajaTest(){
 		Stack<Card> baraja = startController.getBaraja();
-
+		
+		assertEquals(24, baraja.size());
+		for(Card carta: baraja){
+			assertNotNull(carta);
+			assertFalse(carta.uncovered());
+			assertTrue(baraja.indexOf(carta) == baraja.lastIndexOf(carta));
+		}
 	}
 
 }
