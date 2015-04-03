@@ -83,6 +83,8 @@ public class StartControllerTest {
 	@Test
 	public void getDescartesTest(){
 		Stack<Card> descartes = startController.getDescartes();
+		
+		assertTrue(descartes.isEmpty());
 	}
 
 }
