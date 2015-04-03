@@ -13,8 +13,8 @@ public class MoveCardController {
 		this.cardsWasteStack = descartes;
 	}
 
-	public ArrayList<Card> getWasteCards() {
-		return null;
+	public Stack<Card> getWasteCards() {
+		return cardsWasteStack;
 	}
 
 }
