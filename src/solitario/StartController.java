@@ -75,4 +75,9 @@ public class StartController {
 		return baraja;
 	}
 
+	public Stack<Card> getDescartes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

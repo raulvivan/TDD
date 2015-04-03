@@ -79,5 +79,10 @@ public class StartControllerTest {
 			assertTrue(baraja.indexOf(carta) == baraja.lastIndexOf(carta));
 		}
 	}
+	
+	@Test
+	public void getDescartesTest(){
+		Stack<Card> descartes = startController.getDescartes();
+	}
 
 }
