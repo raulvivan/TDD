@@ -17,4 +17,9 @@ public class MoveCardController {
 		return cardsWasteStack;
 	}
 
+	public void moverBarajaADescarte() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

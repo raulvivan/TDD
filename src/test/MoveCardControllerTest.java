@@ -26,6 +26,7 @@ public class MoveCardControllerTest {
 
 	@Test
 	public void moverBarajaADescarteTest() {
+		moveCardController.moverBarajaADescarte();
 		Stack<Card> wasteCards = moveCardController.getWasteCards();
 
 		assertEquals(3, wasteCards.size());
@@ -33,6 +34,7 @@ public class MoveCardControllerTest {
 		for (Card card : wasteCards) {
 			assertNotNull(card);
 			assertTrue(card.uncovered());
+			assertTrue(wasteCards.indexOf(card) == wasteCards.lastIndexOf(card));
 		}
 	}
 
