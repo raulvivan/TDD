@@ -23,4 +23,8 @@ public class Card {
 		return card.suit == suit && card.number == number;
 		
 	}
+
+	public void flip() {
+		this.uncovered = !this.uncovered;
+	}
 }
