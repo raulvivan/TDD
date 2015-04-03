@@ -1,6 +1,5 @@
 package solitario;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class MoveCardController {
@@ -20,6 +19,11 @@ public class MoveCardController {
 	public void moverBarajaADescarte() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public Stack<Card> getDeckCards() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

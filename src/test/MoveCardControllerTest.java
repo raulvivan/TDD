@@ -2,7 +2,6 @@ package test;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 import org.junit.Before;
@@ -26,10 +25,14 @@ public class MoveCardControllerTest {
 
 	@Test
 	public void moverBarajaADescarteTest() {
+		int cartasBaraja = moveCardController.getDeckCards().size();
+		int cartasDescartes = moveCardController.getWasteCards().size();
 		moveCardController.moverBarajaADescarte();
 		Stack<Card> wasteCards = moveCardController.getWasteCards();
 
 		assertEquals(3, wasteCards.size());
+		assertTrue(moveCardController.getDeckCards().size() == cartasBaraja-3);
+		assertTrue(moveCardController.getWasteCards().size() == cartasDescartes+3);
 		
 		for (Card card : wasteCards) {
 			assertNotNull(card);
