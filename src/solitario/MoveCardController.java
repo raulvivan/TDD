@@ -1,15 +1,16 @@
 package solitario;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class MoveCardController {
 	
-	private int cardsDeckStack;
-	private int cardsWasteStack;
-	
-	public MoveCardController(int cardsDeckStack, int cardsWasteStack){
-		this.cardsDeckStack = cardsDeckStack;
-		this.cardsWasteStack = cardsWasteStack;
+	private Stack<Card> cardsDeckStack;
+	private Stack<Card> cardsWasteStack;
+
+	public MoveCardController(Stack<Card> baraja, Stack<Card> descartes) {
+		this.cardsDeckStack = baraja;
+		this.cardsWasteStack = descartes;
 	}
 
 	public ArrayList<Card> getWasteCards() {
