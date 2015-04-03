@@ -14,10 +14,12 @@ import solitario.StartController;
 public class MoveCardControllerTest {
 	
 	MoveCardController moveCardController;
+	StartController startController;
 	
 	@Before
 	public void before() {
-		moveCardController = new MoveCardController(int cardsDeckStack, int cardsWasteStack);
+		startController = new StartController();
+		moveCardController = new MoveCardController(startController.getBaraja(), startController.getDescartes());
 	}
 
 
